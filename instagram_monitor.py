@@ -45,11 +45,11 @@ SENDER_EMAIL = "your_sender_email"
 RECEIVER_EMAIL = "your_receiver_email"
 
 # How often do we perform checks for user activity, you can also use -c parameter; in seconds
-INSTA_CHECK_INTERVAL = 5400  # 1,5 hours
+INSTA_CHECK_INTERVAL = 3600  # 1,5 hours
 
 # Specify your local time zone so we convert Instagram API timestamps to your time (for example: 'Europe/Warsaw')
 # If you leave it as 'Auto' we will try to automatically detect the local timezone
-LOCAL_TIMEZONE = 'Auto'
+LOCAL_TIMEZONE = 'europe/istanbul' 
 
 # Do you want to be informed about changed user's profile pic ? (via console & email notifications when -s is enabled)
 # If so, the tool will save the pic to the file named 'instagram_username_profile_pic.jpeg' after tool is started

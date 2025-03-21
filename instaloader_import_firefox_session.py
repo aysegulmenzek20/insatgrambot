@@ -13,7 +13,7 @@ except ModuleNotFoundError:
 
 def get_cookiefile():
     default_cookiefile = {
-        "Windows": "~/AppData/Roaming/Mozilla/Firefox/Profiles/*/cookies.sqlite",
+        "Windows": "~/AppData/Roaming/Mozilla/Firefox/Profiles/0maocjga.default-release/cookies.sqlite",
         "Darwin": "~/Library/Application Support/Firefox/Profiles/*/cookies.sqlite",
     }.get(system(), "~/.mozilla/firefox/*/cookies.sqlite")
     cookiefiles = glob(expanduser(default_cookiefile))
