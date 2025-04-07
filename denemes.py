@@ -2,17 +2,20 @@ import instaloader
 import json
 
 
+
+USERNAME = 'your_username'
+PASSWORD = 'your_password'
+
 L = instaloader.Instaloader()
-
-
-USERNAME = "activite_20"  
-PASSWORD = "DaX3S%zy4z=#D,_"
+USERNAME = "sucukluyumurta1252"  
+PASSWORD = "20062003Am."
 
 try:
     L.load_session_from_file(USERNAME)
 except FileNotFoundError:
     L.login(USERNAME, PASSWORD) 
     L.save_session_to_file()  
+
 
 target_username = "etkinlik_denizli"
 
